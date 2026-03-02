@@ -1,0 +1,32 @@
+{
+  "name": "CCST Networking 試験対策",
+  "short_name": "CCST対策",
+  "description": "Cisco CCST Networking (100-150) 試験を完全に網羅する学習Webアプリケーション",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#0066CC",
+  "orientation": "any",
+  "categories": ["education"],
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

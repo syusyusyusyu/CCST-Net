@@ -33,7 +33,11 @@ export function QuestionCard({
   onToggleBookmark,
 }: QuestionCardProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
-  const [dndOrder, setDndOrder] = useState<string[]>([]);
+  const [dndOrder, setDndOrder] = useState<string[]>(
+    question.type === "drag-and-drop" && question.dragItems && !question.dropZones
+      ? question.dragItems.map(i => i.id)
+      : []
+  );
   const [phase, setPhase] = useState<"answering" | "answered" | "reviewing">("answering");
   const [isCorrect, setIsCorrect] = useState(false);
   const recordAnswer = useProgressStore(s => s.recordAnswer);
