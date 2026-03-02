@@ -1,0 +1,274 @@
+[
+  {
+    "id": "q-1-1-001",
+    "domainId": 1,
+    "topicId": "1.1",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "OSI参照モデルにおいて、データリンク層は第何層ですか？",
+    "options": [
+      { "id": "a", "text": "第1層" },
+      { "id": "b", "text": "第2層" },
+      { "id": "c", "text": "第3層" },
+      { "id": "d", "text": "第4層" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "データリンク層はOSI参照モデルの第2層です。物理層（第1層）の上に位置し、フレームの送受信、MACアドレスによるアドレッシング、エラー検出を担当します。",
+    "explanationWrong": {
+      "a": "第1層は物理層です。電気信号やケーブルの物理的な伝送を担当します。",
+      "c": "第3層はネットワーク層です。IPアドレスによるルーティングを担当します。",
+      "d": "第4層はトランスポート層です。TCPやUDPによる信頼性のある通信を担当します。"
+    },
+    "relatedTopicIds": ["1.1"],
+    "tags": ["OSI", "データリンク層"]
+  },
+  {
+    "id": "q-1-1-002",
+    "domainId": 1,
+    "topicId": "1.1",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "TCP/IPモデルのインターネット層は、OSI参照モデルのどの層に相当しますか？",
+    "options": [
+      { "id": "a", "text": "データリンク層" },
+      { "id": "b", "text": "トランスポート層" },
+      { "id": "c", "text": "ネットワーク層" },
+      { "id": "d", "text": "セッション層" }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "TCP/IPモデルのインターネット層は、OSI参照モデルの第3層（ネットワーク層）に相当します。IPアドレスを使用したパケットのルーティングを行います。",
+    "explanationWrong": {
+      "a": "データリンク層（第2層）は、TCP/IPモデルではネットワークアクセス層に含まれます。",
+      "b": "トランスポート層（第4層）は、TCP/IPモデルでもトランスポート層として対応します。",
+      "d": "セッション層（第5層）は、TCP/IPモデルではアプリケーション層に含まれます。"
+    },
+    "relatedTopicIds": ["1.1"],
+    "tags": ["TCP/IP", "OSI", "ネットワーク層"]
+  },
+  {
+    "id": "q-1-1-003",
+    "domainId": 1,
+    "topicId": "1.1",
+    "type": "drag-and-drop",
+    "difficulty": "hard",
+    "text": "OSI参照モデルの層を第1層（下）から第7層（上）の順に並べ替えてください。",
+    "dragItems": [
+      { "id": "app", "text": "アプリケーション層" },
+      { "id": "pre", "text": "プレゼンテーション層" },
+      { "id": "ses", "text": "セッション層" },
+      { "id": "tra", "text": "トランスポート層" },
+      { "id": "net", "text": "ネットワーク層" },
+      { "id": "dat", "text": "データリンク層" },
+      { "id": "phy", "text": "物理層" }
+    ],
+    "correctOrder": ["phy", "dat", "net", "tra", "ses", "pre", "app"],
+    "explanation": "OSI参照モデルは下位層から順に、第1層: 物理層、第2層: データリンク層、第3層: ネットワーク層、第4層: トランスポート層、第5層: セッション層、第6層: プレゼンテーション層、第7層: アプリケーション層です。「ぶでねとせぷあ」などの語呂合わせで覚えると効果的です。",
+    "relatedTopicIds": ["1.1"],
+    "tags": ["OSI", "レイヤー"]
+  },
+  {
+    "id": "q-1-2-001",
+    "domainId": 1,
+    "topicId": "1.2",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "ネットワークにおいて、理論上の最大データ転送速度を表す用語はどれですか？",
+    "options": [
+      { "id": "a", "text": "スループット" },
+      { "id": "b", "text": "帯域幅（バンドウィズ）" },
+      { "id": "c", "text": "レイテンシ" },
+      { "id": "d", "text": "ジッター" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "帯域幅（バンドウィズ）は、ネットワークリンクが理論上転送できる最大データ量を表します。一方、スループットは実際に転送されるデータ量、レイテンシは通信の遅延時間を意味します。",
+    "explanationWrong": {
+      "a": "スループットは実際に転送されるデータ量であり、帯域幅より低い値になることが一般的です。",
+      "c": "レイテンシはデータが送信元から宛先に到達するまでの遅延時間を指します。",
+      "d": "ジッターはレイテンシの変動（ばらつき）を指し、VoIPなどのリアルタイム通信に影響します。"
+    },
+    "relatedTopicIds": ["1.2"],
+    "tags": ["帯域幅", "スループット"]
+  },
+  {
+    "id": "q-1-2-002",
+    "domainId": 1,
+    "topicId": "1.2",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "1Gbpsの回線を使用していますが、実際のファイル転送速度が600Mbpsでした。この600Mbpsを表す用語として最も適切なものはどれですか？",
+    "options": [
+      { "id": "a", "text": "帯域幅" },
+      { "id": "b", "text": "レイテンシ" },
+      { "id": "c", "text": "スループット" },
+      { "id": "d", "text": "ボーレート" }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "スループットは実際にネットワーク上で転送されるデータ量を指します。帯域幅が1Gbpsの回線でも、プロトコルのオーバーヘッド、ネットワーク混雑、エラー再送などにより、実際のスループットは帯域幅よりも低くなります。",
+    "explanationWrong": {
+      "a": "帯域幅は理論上の最大転送速度であり、この場合は1Gbpsが帯域幅に相当します。",
+      "b": "レイテンシはデータの遅延時間を表す指標で、転送速度とは異なります。",
+      "d": "ボーレートはシリアル通信における信号変化の速度を表し、ネットワークの実効速度とは異なる概念です。"
+    },
+    "relatedTopicIds": ["1.2"],
+    "tags": ["スループット", "帯域幅", "ネットワーク性能"]
+  },
+  {
+    "id": "q-1-3-001",
+    "domainId": 1,
+    "topicId": "1.3",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "建物内やフロア内など、比較的狭い範囲のネットワークを表す用語はどれですか？",
+    "options": [
+      { "id": "a", "text": "WAN" },
+      { "id": "b", "text": "LAN" },
+      { "id": "c", "text": "MAN" },
+      { "id": "d", "text": "PAN" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "LAN（Local Area Network）は、建物内やフロア内など比較的狭い範囲をカバーするネットワークです。企業のオフィスネットワークや家庭内ネットワークが代表的な例です。",
+    "explanationWrong": {
+      "a": "WAN（Wide Area Network）は都市間や国をまたぐ広域ネットワークです。インターネットがWANの代表例です。",
+      "c": "MAN（Metropolitan Area Network）は都市規模のネットワークで、LANよりも広い範囲をカバーします。",
+      "d": "PAN（Personal Area Network）はBluetoothなどを利用した個人の周囲数メートル程度の非常に狭い範囲のネットワークです。"
+    },
+    "relatedTopicIds": ["1.3"],
+    "tags": ["LAN", "ネットワーク種類"]
+  },
+  {
+    "id": "q-1-3-002",
+    "domainId": 1,
+    "topicId": "1.3",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "スター型トポロジーの特徴として正しいものを2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "中央のハブやスイッチにすべてのデバイスが接続される" },
+      { "id": "b", "text": "1つのケーブル障害でネットワーク全体が停止する" },
+      { "id": "c", "text": "中央デバイスの障害が全体に影響する" },
+      { "id": "d", "text": "各デバイスが他のすべてのデバイスに直接接続される" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "スター型トポロジーでは、すべてのデバイスが中央のハブまたはスイッチに接続されます。1本のケーブルが故障しても影響を受けるのはそのデバイスのみですが、中央デバイスが故障するとネットワーク全体が停止します。現在最も一般的に使用されるトポロジーです。",
+    "explanationWrong": {
+      "b": "これはバス型トポロジーの特徴です。スター型では1つのケーブル障害は該当デバイスのみに影響します。",
+      "d": "これはフルメッシュ型トポロジーの特徴です。スター型では中央デバイスを経由して通信します。"
+    },
+    "relatedTopicIds": ["1.3"],
+    "tags": ["トポロジー", "スター型"]
+  },
+  {
+    "id": "q-1-4-001",
+    "domainId": 1,
+    "topicId": "1.4",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "クラウドサービスモデルにおいて、ハードウェア、OS、ミドルウェア、アプリケーションすべてをプロバイダーが管理し、ユーザーはソフトウェアを利用するだけのモデルはどれですか？",
+    "options": [
+      { "id": "a", "text": "IaaS" },
+      { "id": "b", "text": "PaaS" },
+      { "id": "c", "text": "SaaS" },
+      { "id": "d", "text": "DaaS" }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "SaaS（Software as a Service）は、プロバイダーがインフラからアプリケーションまですべてを管理し、ユーザーはWebブラウザなどを通じてソフトウェアを利用するモデルです。Gmail、Microsoft 365、Salesforceなどが代表的な例です。",
+    "explanationWrong": {
+      "a": "IaaS（Infrastructure as a Service）は、仮想マシンやストレージなどのインフラのみを提供し、OSやアプリケーションはユーザーが管理します。AWS EC2が代表例です。",
+      "b": "PaaS（Platform as a Service）は、インフラに加えてOSやミドルウェアも提供しますが、アプリケーションはユーザーが開発・管理します。Herokuが代表例です。",
+      "d": "DaaS（Desktop as a Service）は仮想デスクトップサービスで、主要な3つのクラウドサービスモデル（IaaS/PaaS/SaaS）には含まれません。"
+    },
+    "relatedTopicIds": ["1.4"],
+    "tags": ["クラウド", "SaaS"]
+  },
+  {
+    "id": "q-1-4-002",
+    "domainId": 1,
+    "topicId": "1.4",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "オンプレミスと比較したクラウドの利点として正しいものを2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "初期投資（CAPEX）を抑え、従量課金（OPEX）で利用できる" },
+      { "id": "b", "text": "インターネット接続がなくても常にアクセスできる" },
+      { "id": "c", "text": "需要に応じてリソースを柔軟にスケーリングできる" },
+      { "id": "d", "text": "データの物理的な保管場所を完全にコントロールできる" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "クラウドの主な利点は、初期投資を抑えて従量課金で利用できること（CAPEX→OPEX）と、需要に応じたスケーラビリティです。オンプレミスでは物理サーバーの購入が必要ですが、クラウドでは必要な分だけ利用料を支払います。",
+    "explanationWrong": {
+      "b": "クラウドサービスにはインターネット接続が必要です。接続なしでのアクセスはオンプレミスの利点です。",
+      "d": "データの物理的な保管場所を完全にコントロールできるのはオンプレミスの利点です。クラウドではプロバイダーのデータセンターに保管されます。"
+    },
+    "relatedTopicIds": ["1.4"],
+    "tags": ["クラウド", "オンプレミス", "CAPEX", "OPEX"]
+  },
+  {
+    "id": "q-1-5-001",
+    "domainId": 1,
+    "topicId": "1.5",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "Webサイトにアクセスする際、URLの名前解決を行うプロトコルはどれですか？",
+    "options": [
+      { "id": "a", "text": "DHCP" },
+      { "id": "b", "text": "DNS" },
+      { "id": "c", "text": "HTTP" },
+      { "id": "d", "text": "NTP" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "DNS（Domain Name System）は、ドメイン名（例: www.example.com）をIPアドレス（例: 93.184.216.34）に変換する名前解決を行うプロトコルです。通常UDPポート53を使用します。",
+    "explanationWrong": {
+      "a": "DHCP（Dynamic Host Configuration Protocol）は、デバイスにIPアドレスを自動的に割り当てるプロトコルです。",
+      "c": "HTTP（HyperText Transfer Protocol）は、WebブラウザとWebサーバー間でHTMLなどのコンテンツを転送するプロトコルです。",
+      "d": "NTP（Network Time Protocol）は、ネットワーク上のデバイスの時刻を同期するプロトコルです。"
+    },
+    "relatedTopicIds": ["1.5"],
+    "tags": ["DNS", "プロトコル", "名前解決"]
+  },
+  {
+    "id": "q-1-5-002",
+    "domainId": 1,
+    "topicId": "1.5",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "TCPとUDPの違いについて、正しい説明はどれですか？",
+    "options": [
+      { "id": "a", "text": "TCPはコネクションレスで、UDPはコネクション型である" },
+      { "id": "b", "text": "TCPは3ウェイハンドシェイクで接続を確立し、信頼性のある通信を提供する" },
+      { "id": "c", "text": "UDPはエラー訂正と再送機能を持ち、TCPよりも信頼性が高い" },
+      { "id": "d", "text": "TCPとUDPはどちらもOSI参照モデルのネットワーク層で動作する" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "TCP（Transmission Control Protocol）はコネクション型プロトコルで、3ウェイハンドシェイク（SYN → SYN-ACK → ACK）で接続を確立し、データの順序保証、エラー検出、再送制御を行います。UDPはコネクションレスで、これらの機能を持ちませんが、オーバーヘッドが少なく高速です。",
+    "explanationWrong": {
+      "a": "逆です。TCPがコネクション型、UDPがコネクションレスです。",
+      "c": "UDPにはエラー訂正や再送機能がありません。これらはTCPの特徴です。UDPは速度を重視する通信（動画ストリーミング、VoIPなど）に使用されます。",
+      "d": "TCPとUDPはどちらもOSI参照モデルの第4層（トランスポート層）で動作します。ネットワーク層（第3層）ではIPが動作します。"
+    },
+    "relatedTopicIds": ["1.5"],
+    "tags": ["TCP", "UDP", "トランスポート層"]
+  },
+  {
+    "id": "q-1-5-003",
+    "domainId": 1,
+    "topicId": "1.5",
+    "type": "drag-and-drop",
+    "difficulty": "hard",
+    "text": "各プロトコルを正しいトランスポート層プロトコル（TCP または UDP）にマッチングしてください。",
+    "dragItems": [
+      { "id": "http", "text": "HTTP" },
+      { "id": "dns", "text": "DNS" },
+      { "id": "ftp", "text": "FTP" },
+      { "id": "tftp", "text": "TFTP" }
+    ],
+    "dropZones": [
+      { "id": "tcp", "text": "TCP" },
+      { "id": "udp", "text": "UDP" },
+      { "id": "both", "text": "TCP と UDP 両方" }
+    ],
+    "correctOrder": ["tcp", "both", "tcp", "udp"],
+    "explanation": "HTTPはTCPポート80（HTTPSは443）を使用します。FTPはTCPポート20（データ）と21（制御）を使用します。TFTPはUDPポート69を使用する簡易版ファイル転送プロトコルです。DNSは通常UDPポート53を使用しますが、ゾーン転送や512バイトを超える応答ではTCPも使用するため、両方が正解です。",
+    "relatedTopicIds": ["1.5"],
+    "tags": ["TCP", "UDP", "プロトコル", "ポート番号"]
+  }
+]

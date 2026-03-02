@@ -1,0 +1,11 @@
+export const EXAM_QUESTION_COUNT = 46;
+export const EXAM_TIME_LIMIT_SECONDS = 50 * 60; // 3000秒
+export const PASSING_SCORE = 750;
+export const MAX_SCORE = 1000;
+export const MIN_SCORE = 200;
+export const SR_INITIAL_EASE_FACTOR = 2.5;
+export const SR_MIN_EASE_FACTOR = 1.3;
+export const WEAK_TOPIC_MIN_ATTEMPTS = 3;
+export const WEAK_TOPIC_COUNT = 5;
+export const DOMAIN_COUNT = 6;
+export const TOTAL_TOPICS = 22;

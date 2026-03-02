@@ -1,0 +1,272 @@
+[
+  {
+    "id": "q-5-1-001",
+    "domainId": 5,
+    "topicId": "5.1",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "ネットワークトラブルシューティングにおいて、問題を報告したユーザーから情報を収集した後、次に行うべきステップはどれですか？",
+    "options": [
+      { "id": "a", "text": "すぐにネットワーク機器を再起動する" },
+      { "id": "b", "text": "問題の原因を特定するための仮説を立てる" },
+      { "id": "c", "text": "新しい機器を注文する" },
+      { "id": "d", "text": "他のユーザーに同じ問題が発生しているか確認せず、すぐに修復する" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "構造化されたトラブルシューティング手法では、(1)問題の特定と情報収集、(2)原因の仮説を立てる、(3)仮説を検証する、(4)解決策を実施する、(5)結果を確認する、(6)ドキュメントに記録する、という順序で進めます。情報収集後は仮説を立てて検証を行います。",
+    "explanationWrong": {
+      "a": "原因を特定せずにすぐ再起動すると、問題の根本原因がわからないまま再発する可能性があります。",
+      "c": "原因の調査を行わずに新しい機器を注文するのは適切ではありません。問題はソフトウェアや設定に起因する場合もあります。",
+      "d": "問題の範囲を把握することは重要です。影響範囲を確認してから対処することで、効率的な問題解決が可能になります。"
+    },
+    "relatedTopicIds": ["5.1"],
+    "tags": ["トラブルシューティング", "方法論", "手順"]
+  },
+  {
+    "id": "q-5-1-002",
+    "domainId": 5,
+    "topicId": "5.1",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "トラブルシューティング完了後、最後に行うべき重要なステップはどれですか？",
+    "options": [
+      { "id": "a", "text": "別の問題に取りかかる" },
+      { "id": "b", "text": "ユーザーに再起動を依頼する" },
+      { "id": "c", "text": "問題と解決策をドキュメントに記録する" },
+      { "id": "d", "text": "ネットワーク全体をスキャンする" }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "トラブルシューティングの最終ステップは、問題の内容、原因、解決策、実施した手順をドキュメント（チケットシステムやナレッジベース）に記録することです。これにより、将来同様の問題が発生した場合に迅速に対応でき、チーム全体の知識共有にもなります。",
+    "explanationWrong": {
+      "a": "ドキュメントに記録せずに次の問題に移ると、重要な情報が失われます。",
+      "b": "再起動は問題解決の手段の一つですが、最終ステップではありません。",
+      "d": "ネットワーク全体のスキャンは必要に応じて行いますが、トラブルシューティングの最終ステップではありません。"
+    },
+    "relatedTopicIds": ["5.1"],
+    "tags": ["トラブルシューティング", "ドキュメント", "記録"]
+  },
+  {
+    "id": "q-5-2-001",
+    "domainId": 5,
+    "topicId": "5.2",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "Wiresharkの主な用途として最も適切なものはどれですか？",
+    "options": [
+      { "id": "a", "text": "ファイアウォールのルールを設定する" },
+      { "id": "b", "text": "ネットワーク上のパケットをキャプチャして分析する" },
+      { "id": "c", "text": "ネットワーク機器のファームウェアを更新する" },
+      { "id": "d", "text": "IPアドレスを自動的に割り当てる" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Wiresharkはオープンソースのネットワークプロトコルアナライザです。ネットワークインターフェースを通過するパケットをリアルタイムでキャプチャし、プロトコルの詳細を表示して分析できます。ネットワーク障害の診断、セキュリティ分析、プロトコルの学習などに使用されます。",
+    "explanationWrong": {
+      "a": "ファイアウォールのルール設定はファイアウォール管理ツールや機器のCLIで行います。",
+      "c": "ファームウェアの更新はデバイス管理ツールやTFTPサーバーを使用して行います。",
+      "d": "IPアドレスの自動割り当てはDHCPサーバーの役割です。"
+    },
+    "relatedTopicIds": ["5.2"],
+    "tags": ["Wireshark", "パケットキャプチャ", "プロトコルアナライザ"]
+  },
+  {
+    "id": "q-5-3-001",
+    "domainId": 5,
+    "topicId": "5.3",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "リモートホストへのネットワーク到達性を最も簡単にテストするコマンドはどれですか？",
+    "options": [
+      { "id": "a", "text": "nslookup" },
+      { "id": "b", "text": "traceroute" },
+      { "id": "c", "text": "ping" },
+      { "id": "d", "text": "netstat" }
+    ],
+    "correctAnswers": ["c"],
+    "explanation": "pingコマンドはICMP（Internet Control Message Protocol）のエコー要求/応答を使用して、リモートホストへのネットワーク到達性をテストする最も基本的なコマンドです。応答があれば接続可能、タイムアウトすれば接続に問題があることがわかります。",
+    "explanationWrong": {
+      "a": "nslookupはDNS名前解決のテストに使用するコマンドです。ホスト名からIPアドレスへの解決を確認します。",
+      "b": "traceroute（Windowsではtracert）は宛先までの経路を確認するコマンドです。到達性のテストだけならpingの方が簡単です。",
+      "d": "netstatはローカルマシンのネットワーク接続、ルーティングテーブル、ポート状態を表示するコマンドです。"
+    },
+    "relatedTopicIds": ["5.3"],
+    "tags": ["ping", "ICMP", "診断コマンド"]
+  },
+  {
+    "id": "q-5-3-002",
+    "domainId": 5,
+    "topicId": "5.3",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "WindowsでローカルマシンのIPアドレス設定を確認するために使用できるコマンドを2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "ipconfig" },
+      { "id": "b", "text": "ifconfig" },
+      { "id": "c", "text": "ipconfig /all" },
+      { "id": "d", "text": "ip addr show" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "Windowsでは ipconfig コマンドでIPアドレス、サブネットマスク、デフォルトゲートウェイなどの基本情報を確認できます。ipconfig /all を使用すると、MACアドレス、DHCPサーバー、DNSサーバーなどのより詳細な情報も表示されます。ifconfig や ip addr show はLinux/macOSで使用するコマンドです。",
+    "explanationWrong": {
+      "b": "ifconfigはLinuxやmacOSで使用するネットワーク設定確認コマンドです。Windowsでは使用できません。",
+      "d": "ip addr showはLinuxで使用するネットワーク設定確認コマンドです。Windowsでは使用できません。"
+    },
+    "relatedTopicIds": ["5.3"],
+    "tags": ["ipconfig", "Windows", "診断コマンド", "IP設定"]
+  },
+  {
+    "id": "q-5-4-001",
+    "domainId": 5,
+    "topicId": "5.4",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "ネットワークデバイスへのリモートアクセスにおいて、通信を暗号化して安全に接続するプロトコルはどれですか？",
+    "options": [
+      { "id": "a", "text": "Telnet" },
+      { "id": "b", "text": "SSH" },
+      { "id": "c", "text": "FTP" },
+      { "id": "d", "text": "HTTP" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "SSH（Secure Shell）は、ネットワーク上の通信を暗号化してリモートデバイスに安全にアクセスするためのプロトコルです。デフォルトでTCPポート22を使用します。Telnetも同様のリモートアクセスを提供しますが、通信が平文（暗号化なし）のため、SSHが推奨されています。",
+    "explanationWrong": {
+      "a": "Telnetはリモートアクセスプロトコルですが、通信が暗号化されないため、パスワードなどの情報が傍受される危険があります。",
+      "c": "FTP（File Transfer Protocol）はファイル転送プロトコルであり、リモート管理用ではありません。また、通信は暗号化されません。",
+      "d": "HTTP（Hypertext Transfer Protocol）はWebコンテンツの転送プロトコルであり、暗号化されません。暗号化にはHTTPSが必要です。"
+    },
+    "relatedTopicIds": ["5.4"],
+    "tags": ["SSH", "リモートアクセス", "暗号化"]
+  },
+  {
+    "id": "q-5-4-002",
+    "domainId": 5,
+    "topicId": "5.4",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "企業のネットワークにインターネットから安全にアクセスするために使用される技術はどれですか？",
+    "options": [
+      { "id": "a", "text": "NAT（Network Address Translation）" },
+      { "id": "b", "text": "VPN（Virtual Private Network）" },
+      { "id": "c", "text": "VLAN（Virtual LAN）" },
+      { "id": "d", "text": "DNS（Domain Name System）" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "VPN（Virtual Private Network）は、インターネットなどの公衆ネットワーク上に暗号化されたトンネルを作成し、プライベートネットワークに安全にアクセスする技術です。リモートワーカーが自宅から企業ネットワークのリソースにアクセスする場合などに使用されます。",
+    "explanationWrong": {
+      "a": "NATはプライベートIPアドレスをパブリックIPアドレスに変換する技術であり、セキュアなリモートアクセスを提供するものではありません。",
+      "c": "VLANはスイッチ上でブロードキャストドメインを分割する技術であり、インターネットからのリモートアクセスとは関係ありません。",
+      "d": "DNSはドメイン名をIPアドレスに変換するシステムであり、セキュアなアクセスを提供するものではありません。"
+    },
+    "relatedTopicIds": ["5.4"],
+    "tags": ["VPN", "リモートアクセス", "セキュリティ"]
+  },
+  {
+    "id": "q-5-5-001",
+    "domainId": 5,
+    "topicId": "5.5",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "Ciscoデバイスで現在の実行中の設定を表示するコマンドはどれですか？",
+    "options": [
+      { "id": "a", "text": "show version" },
+      { "id": "b", "text": "show running-config" },
+      { "id": "c", "text": "show ip route" },
+      { "id": "d", "text": "show interfaces" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "show running-config（略: show run）は、Ciscoデバイスの現在のRAM上で実行中の設定を表示するコマンドです。ホスト名、インターフェース設定、ルーティング設定、アクセスリストなど、デバイスの全設定を確認できます。",
+    "explanationWrong": {
+      "a": "show versionはデバイスのハードウェア情報、IOSバージョン、稼働時間（uptime）などを表示するコマンドです。",
+      "c": "show ip routeはルーティングテーブルの内容を表示するコマンドです。",
+      "d": "show interfacesは各インターフェースの詳細な状態と統計情報を表示するコマンドです。"
+    },
+    "relatedTopicIds": ["5.5"],
+    "tags": ["show running-config", "Cisco", "CLIコマンド"]
+  },
+  {
+    "id": "q-5-5-002",
+    "domainId": 5,
+    "topicId": "5.5",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "Ciscoスイッチの show mac address-table コマンドから確認できる情報を2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "MACアドレスとそれが学習されたポートの対応" },
+      { "id": "b", "text": "各ポートのIPアドレス設定" },
+      { "id": "c", "text": "MACアドレスが属するVLAN" },
+      { "id": "d", "text": "ルーティングテーブルのエントリ" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "show mac address-table コマンドは、スイッチのMACアドレステーブル（CAMテーブル）を表示します。各エントリにはVLAN番号、MACアドレス、タイプ（dynamic/static）、そのMACアドレスが学習されたポート（インターフェース）が含まれます。",
+    "explanationWrong": {
+      "b": "IPアドレス設定はshow ip interface briefコマンドで確認できます。MACアドレステーブルにはIPアドレス情報は含まれません。",
+      "d": "ルーティングテーブルはshow ip routeコマンドで確認できます。MACアドレステーブルはレイヤー2の情報です。"
+    },
+    "relatedTopicIds": ["5.5"],
+    "tags": ["show mac address-table", "MACアドレス", "Cisco", "スイッチ"]
+  },
+  {
+    "id": "q-5-5-003",
+    "domainId": 5,
+    "topicId": "5.5",
+    "type": "drag-and-drop",
+    "difficulty": "hard",
+    "text": "各Cisco showコマンドを表示される情報の説明に正しくマッチングしてください。",
+    "dragItems": [
+      { "id": "cmd1", "text": "show version" },
+      { "id": "cmd2", "text": "show ip interface brief" },
+      { "id": "cmd3", "text": "show cdp neighbors" },
+      { "id": "cmd4", "text": "show ip route" }
+    ],
+    "dropZones": [
+      { "id": "desc1", "text": "IOSバージョン、稼働時間、ハードウェア情報" },
+      { "id": "desc2", "text": "各インターフェースのIPアドレスと状態の概要" },
+      { "id": "desc3", "text": "直接接続されたCiscoデバイスの情報" },
+      { "id": "desc4", "text": "ルーティングテーブルのエントリ一覧" }
+    ],
+    "correctOrder": ["desc1", "desc2", "desc3", "desc4"],
+    "explanation": "show versionはIOSバージョン、ハードウェア情報、稼働時間を表示します。show ip interface briefは全インターフェースのIPアドレスとup/down状態を簡潔に表示します。show cdp neighborsはCDP（Cisco Discovery Protocol）を使って直接接続されたCiscoデバイスの情報を表示します。show ip routeはルーティングテーブルの内容を表示します。",
+    "relatedTopicIds": ["5.5"],
+    "tags": ["showコマンド", "Cisco", "CLI", "マッチング"]
+  },
+  {
+    "id": "q-5-3-003",
+    "domainId": 5,
+    "topicId": "5.3",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "tracerouteコマンド（Windowsではtracert）の出力結果から確認できる情報として最も適切なものはどれですか？",
+    "options": [
+      { "id": "a", "text": "宛先ホストで実行中のサービス一覧" },
+      { "id": "b", "text": "宛先までの経路上にある各ルーターのIPアドレスと応答時間" },
+      { "id": "c", "text": "ローカルマシンのMACアドレス" },
+      { "id": "d", "text": "DNSサーバーのレコード情報" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "traceroute（tracert）は、宛先ホストまでの経路上にある各ルーター（ホップ）のIPアドレスと、各ホップまでの応答時間（RTT: Round Trip Time）を表示するコマンドです。TTL（Time to Live）を段階的に増やしながらICMPパケットを送信し、各ルーターからの応答を記録します。ネットワーク遅延が発生している箇所を特定するのに役立ちます。",
+    "explanationWrong": {
+      "a": "実行中のサービスの確認にはポートスキャンツール（nmapなど）を使用します。",
+      "c": "MACアドレスの確認にはipconfig /all（Windows）やifconfig（Linux）を使用します。",
+      "d": "DNSレコードの確認にはnslookupやdigコマンドを使用します。"
+    },
+    "relatedTopicIds": ["5.3"],
+    "tags": ["traceroute", "tracert", "診断コマンド", "経路"]
+  },
+  {
+    "id": "q-5-2-002",
+    "domainId": 5,
+    "topicId": "5.2",
+    "type": "drag-and-drop",
+    "difficulty": "medium",
+    "text": "Wiresharkでパケットキャプチャを行う手順を正しい順序に並べ替えてください。",
+    "dragItems": [
+      { "id": "s1", "text": "キャプチャするネットワークインターフェースを選択する" },
+      { "id": "s2", "text": "キャプチャを開始する" },
+      { "id": "s3", "text": "必要なトラフィックが取得されたらキャプチャを停止する" },
+      { "id": "s4", "text": "表示フィルターを適用して目的のパケットを分析する" }
+    ],
+    "correctOrder": ["s1", "s2", "s3", "s4"],
+    "explanation": "Wiresharkでのパケットキャプチャの基本手順は、(1)キャプチャ対象のネットワークインターフェース（有線LANやWi-Fiなど）を選択し、(2)キャプチャを開始してパケットを記録し、(3)十分なデータが取得されたらキャプチャを停止し、(4)表示フィルター（例: http、tcp.port==80 など）を使用して必要なパケットを絞り込んで分析します。",
+    "relatedTopicIds": ["5.2"],
+    "tags": ["Wireshark", "パケットキャプチャ", "手順"]
+  }
+]

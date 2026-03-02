@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "title": "Standards and Concepts",
+    "titleJa": "標準と概念",
+    "topics": [
+      {
+        "id": "1.1",
+        "title": "ネットワークの基本的な構成要素の特定",
+        "titleEn": "Identify Fundamental Network Characteristics",
+        "description": "TCP/IPモデル、OSIモデル、フレームとパケット、アドレッシングの概念"
+      },
+      {
+        "id": "1.2",
+        "title": "帯域幅とスループットの違い",
+        "titleEn": "Bandwidth vs Throughput",
+        "description": "帯域幅、スループット、レイテンシの違いとネットワーク性能の測定"
+      },
+      {
+        "id": "1.3",
+        "title": "ネットワークの種類とトポロジー",
+        "titleEn": "Network Types and Topologies",
+        "description": "LAN, WAN, MAN, CAN, PAN, WLAN。スター、メッシュ、バス、リング、ハイブリッド"
+      },
+      {
+        "id": "1.4",
+        "title": "クラウドとオンプレミスの比較",
+        "titleEn": "Cloud vs On-Premises",
+        "description": "パブリック/プライベート/ハイブリッドクラウド、SaaS, PaaS, IaaS"
+      },
+      {
+        "id": "1.5",
+        "title": "一般的なネットワークプロトコル",
+        "titleEn": "Common Network Protocols",
+        "description": "TCP, UDP, FTP, SFTP, TFTP, HTTP, HTTPS, DHCP, DNS, ICMP, NTP"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Addressing and Subnet Formats",
+    "titleJa": "アドレッシングとサブネット形式",
+    "topics": [
+      {
+        "id": "2.1",
+        "title": "プライベート/パブリックアドレス",
+        "titleEn": "Private vs Public Addresses",
+        "description": "プライベートアドレス範囲、アドレスクラス、NAT"
+      },
+      {
+        "id": "2.2",
+        "title": "IPv4アドレスとサブネット形式",
+        "titleEn": "IPv4 Addresses and Subnet Formats",
+        "description": "IPv4構造、サブネットマスク、CIDR表記、サブネット計算"
+      },
+      {
+        "id": "2.3",
+        "title": "IPv6アドレスとプレフィックス",
+        "titleEn": "IPv6 Addresses and Prefixes",
+        "description": "IPv6構造・表記法、IPv6プレフィックス、IPv4との違い"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Endpoints and Media Types",
+    "titleJa": "エンドポイントとメディアタイプ",
+    "topics": [
+      {
+        "id": "3.1",
+        "title": "LANで使用されるケーブルとコネクタ",
+        "titleEn": "Cables and Connectors Used in LANs",
+        "description": "光ファイバー、銅線、ツイストペア、同軸、RJ-45, RJ-11"
+      },
+      {
+        "id": "3.2",
+        "title": "Wi-Fi・セルラー・有線の違い",
+        "titleEn": "Wi-Fi, Cellular, and Wired Connections",
+        "description": "Wi-Fi規格、セルラー技術、有線イーサネット、干渉源"
+      },
+      {
+        "id": "3.3",
+        "title": "エンドポイントデバイス",
+        "titleEn": "Endpoint Devices",
+        "description": "PC、モバイル、IP電話、プリンター、サーバー、IoT"
+      },
+      {
+        "id": "3.4",
+        "title": "ネットワーク接続の設定と確認",
+        "titleEn": "Configure and Verify Network Connections",
+        "description": "Windows/Linux/macOS/Android/iOSでのネットワーク設定"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Infrastructure",
+    "titleJa": "インフラストラクチャ",
+    "topics": [
+      {
+        "id": "4.1",
+        "title": "Ciscoデバイスのステータスライト",
+        "titleEn": "Cisco Device Status Lights",
+        "description": "LEDインジケーターの意味、デバイス状態の解釈"
+      },
+      {
+        "id": "4.2",
+        "title": "ネットワーク図と適切なケーブル接続",
+        "titleEn": "Network Diagrams and Cable Connections",
+        "description": "ネットワーク図の読み取り、ケーブルの選択と接続"
+      },
+      {
+        "id": "4.3",
+        "title": "ネットワークデバイスのポート",
+        "titleEn": "Network Device Ports",
+        "description": "コンソール、シリアル、ファイバー、イーサネット、SFP、USB、PoE"
+      },
+      {
+        "id": "4.4",
+        "title": "基本的なルーティング概念",
+        "titleEn": "Basic Routing Concepts",
+        "description": "デフォルトゲートウェイ、ローカルvsリモートネットワーク、ルーティングテーブル"
+      },
+      {
+        "id": "4.5",
+        "title": "基本的なスイッチング概念",
+        "titleEn": "Basic Switching Concepts",
+        "description": "L2 vs L3スイッチ、MACアドレステーブル、MACフィルタリング、VLAN"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Diagnosing Problems",
+    "titleJa": "問題の診断",
+    "topics": [
+      {
+        "id": "5.1",
+        "title": "トラブルシューティング方法論",
+        "titleEn": "Troubleshooting Methodologies",
+        "description": "チケットシステム、ドキュメント、構造化トラブルシューティング"
+      },
+      {
+        "id": "5.2",
+        "title": "Wiresharkでのパケットキャプチャ",
+        "titleEn": "Packet Capture with Wireshark",
+        "description": "Wireshark基本操作、キャプチャファイルの保存・解釈"
+      },
+      {
+        "id": "5.3",
+        "title": "基本的な診断コマンド",
+        "titleEn": "Basic Diagnostic Commands",
+        "description": "ping, ipconfig/ifconfig/ip, tracert/traceroute, nslookup"
+      },
+      {
+        "id": "5.4",
+        "title": "ネットワークデバイスへのアクセス方法",
+        "titleEn": "Accessing Network Devices",
+        "description": "RDP, SSH, Telnet, VPN、コンソール、NMS、Meraki"
+      },
+      {
+        "id": "5.5",
+        "title": "Cisco showコマンド",
+        "titleEn": "Cisco Show Commands",
+        "description": "show run, show cdp neighbors, show ip interface brief, show ip routeなど"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Security",
+    "titleJa": "セキュリティ",
+    "topics": [
+      {
+        "id": "6.1",
+        "title": "ファイアウォールの動作",
+        "titleEn": "Firewall Operations",
+        "description": "ブロックするポート/プロトコル、許可/拒否ルール、配置場所"
+      },
+      {
+        "id": "6.2",
+        "title": "基本的なセキュリティ概念",
+        "titleEn": "Basic Security Concepts",
+        "description": "CIAトライアド、AAA、MFA、暗号化、Active Directory、フィッシング、マルウェア、DoS"
+      },
+      {
+        "id": "6.3",
+        "title": "家庭用ルーターの無線セキュリティ",
+        "titleEn": "Home Router Wireless Security",
+        "description": "WPA, WPA2, WPA3、Personal vs Enterprise"
+      }
+    ]
+  }
+]

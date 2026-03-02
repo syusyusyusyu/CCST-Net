@@ -1,0 +1,231 @@
+[
+  {
+    "id": "q-6-1-001",
+    "domainId": 6,
+    "topicId": "6.1",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "ファイアウォールの主な役割として最も適切なものはどれですか？",
+    "options": [
+      { "id": "a", "text": "ネットワーク上のデバイスにIPアドレスを割り当てる" },
+      { "id": "b", "text": "許可されたトラフィックのみを通過させ、不正なトラフィックをブロックする" },
+      { "id": "c", "text": "ネットワーク上のパケットを暗号化する" },
+      { "id": "d", "text": "ネットワークの帯域幅を増加させる" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "ファイアウォールは、事前に定義されたセキュリティルール（ACL: アクセスコントロールリスト）に基づいて、許可されたネットワークトラフィックのみを通過させ、不正なトラフィックをブロックするネットワークセキュリティデバイスです。通常、信頼されたネットワーク（内部）と信頼されていないネットワーク（外部/インターネット）の境界に配置されます。",
+    "explanationWrong": {
+      "a": "IPアドレスの割り当てはDHCPサーバーの役割です。",
+      "c": "パケットの暗号化はVPNやSSL/TLSなどの暗号化プロトコルの役割です。ファイアウォールはトラフィックのフィルタリングを行います。",
+      "d": "帯域幅の増加はネットワークインフラのアップグレード（回線増強やリンクアグリゲーション）で実現します。"
+    },
+    "relatedTopicIds": ["6.1"],
+    "tags": ["ファイアウォール", "ACL", "トラフィックフィルタリング"]
+  },
+  {
+    "id": "q-6-1-002",
+    "domainId": 6,
+    "topicId": "6.1",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "ファイアウォールのルールにおいて、特定のポート番号を使用してトラフィックを制御する場合、Webサーバーへの暗号化された通信を許可するために開放すべきポートはどれですか？",
+    "options": [
+      { "id": "a", "text": "ポート 80" },
+      { "id": "b", "text": "ポート 443" },
+      { "id": "c", "text": "ポート 22" },
+      { "id": "d", "text": "ポート 25" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "HTTPS（暗号化されたWeb通信）はデフォルトでTCPポート443を使用します。ポート80は暗号化されていないHTTP通信に使用されます。ファイアウォールでポート443を許可することで、SSL/TLSで暗号化されたWebトラフィックを通過させることができます。",
+    "explanationWrong": {
+      "a": "ポート80はHTTP（暗号化なし）のデフォルトポートです。暗号化された通信にはポート443が使用されます。",
+      "c": "ポート22はSSH（Secure Shell）のデフォルトポートです。リモート管理に使用されます。",
+      "d": "ポート25はSMTP（Simple Mail Transfer Protocol）のデフォルトポートです。メール送信に使用されます。"
+    },
+    "relatedTopicIds": ["6.1"],
+    "tags": ["ファイアウォール", "ポート番号", "HTTPS", "443"]
+  },
+  {
+    "id": "q-6-2-001",
+    "domainId": 6,
+    "topicId": "6.2",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "CIAトライアドの3つの要素として正しいものはどれですか？",
+    "options": [
+      { "id": "a", "text": "機密性（Confidentiality）、完全性（Integrity）、可用性（Availability）" },
+      { "id": "b", "text": "認証（Certification）、識別（Identification）、承認（Authorization）" },
+      { "id": "c", "text": "暗号化（Cryptography）、侵入検知（Intrusion Detection）、アクセス制御（Access Control）" },
+      { "id": "d", "text": "コンプライアンス（Compliance）、インシデント対応（Incident Response）、監査（Auditing）" }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "CIAトライアドは情報セキュリティの3大原則で、機密性（Confidentiality: 許可された者だけが情報にアクセスできる）、完全性（Integrity: 情報が改ざんされていない）、可用性（Availability: 必要な時に情報やシステムにアクセスできる）で構成されます。",
+    "explanationWrong": {
+      "b": "認証・識別・承認はセキュリティの重要な概念ですが、CIAトライアドの構成要素ではありません。",
+      "c": "暗号化・侵入検知・アクセス制御はセキュリティ技術ですが、CIAトライアドの定義ではありません。",
+      "d": "コンプライアンス・インシデント対応・監査はセキュリティ運用の要素ですが、CIAトライアドではありません。"
+    },
+    "relatedTopicIds": ["6.2"],
+    "tags": ["CIA", "機密性", "完全性", "可用性", "セキュリティ"]
+  },
+  {
+    "id": "q-6-2-002",
+    "domainId": 6,
+    "topicId": "6.2",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "AAA（Authentication, Authorization, Accounting）において、「Authorization」が担当する機能はどれですか？",
+    "options": [
+      { "id": "a", "text": "ユーザーが本人であることを確認する" },
+      { "id": "b", "text": "ユーザーがアクセスできるリソースや操作を制御する" },
+      { "id": "c", "text": "ユーザーの操作ログを記録する" },
+      { "id": "d", "text": "ユーザーのパスワードを暗号化する" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "AAAフレームワークにおいて、Authorization（認可）は認証されたユーザーがどのリソースにアクセスでき、どの操作を実行できるかを制御する機能です。Authentication（認証）は本人確認、Accounting（アカウンティング）はユーザーの操作記録や課金情報の管理を担当します。",
+    "explanationWrong": {
+      "a": "ユーザーの本人確認はAuthentication（認証）の役割です。",
+      "c": "操作ログの記録はAccounting（アカウンティング）の役割です。",
+      "d": "パスワードの暗号化は暗号化技術の範囲であり、AAAの特定の要素ではありません。"
+    },
+    "relatedTopicIds": ["6.2"],
+    "tags": ["AAA", "認可", "Authorization", "アクセス制御"]
+  },
+  {
+    "id": "q-6-2-003",
+    "domainId": 6,
+    "topicId": "6.2",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "多要素認証（MFA）で使用される認証要素のカテゴリとして正しいものを2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "知識情報（Something you know）- パスワード、PIN" },
+      { "id": "b", "text": "ネットワーク情報（Something you connect）- 接続しているネットワーク" },
+      { "id": "c", "text": "所持情報（Something you have）- スマートフォン、セキュリティトークン" },
+      { "id": "d", "text": "場所情報（Somewhere you are）- 現在の物理的位置" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "多要素認証（MFA）は、2つ以上の異なるカテゴリの認証要素を組み合わせてセキュリティを強化する方法です。主な3つのカテゴリは、知識情報（Something you know: パスワード、PIN）、所持情報（Something you have: スマートフォン、セキュリティトークン）、生体情報（Something you are: 指紋、顔認証）です。",
+    "explanationWrong": {
+      "b": "「接続しているネットワーク」は標準的なMFAの認証要素カテゴリではありません。",
+      "d": "位置情報はセキュリティの追加的な判断材料として使用されることがありますが、MFAの3つの主要カテゴリには含まれません。"
+    },
+    "relatedTopicIds": ["6.2"],
+    "tags": ["MFA", "多要素認証", "認証"]
+  },
+  {
+    "id": "q-6-2-004",
+    "domainId": 6,
+    "topicId": "6.2",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "攻撃者が偽のメールやWebサイトを使って、ユーザーからパスワードやクレジットカード情報を騙し取る攻撃手法はどれですか？",
+    "options": [
+      { "id": "a", "text": "DDoS攻撃" },
+      { "id": "b", "text": "フィッシング" },
+      { "id": "c", "text": "ブルートフォース攻撃" },
+      { "id": "d", "text": "マルウェア感染" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "フィッシング（Phishing）は、信頼できる組織（銀行、企業など）になりすました偽のメールやWebサイトを使って、ユーザーにパスワード、クレジットカード番号、個人情報などの機密情報を入力させて騙し取るソーシャルエンジニアリング攻撃の一種です。",
+    "explanationWrong": {
+      "a": "DDoS（Distributed Denial of Service）攻撃は、大量のトラフィックを標的サーバーに送り付けてサービスを停止させる攻撃です。",
+      "c": "ブルートフォース攻撃は、可能な全てのパスワードの組み合わせを試行して正しいパスワードを見つけ出す攻撃です。",
+      "d": "マルウェアは悪意のあるソフトウェアの総称で、ウイルス、ワーム、トロイの木馬などが含まれます。"
+    },
+    "relatedTopicIds": ["6.2"],
+    "tags": ["フィッシング", "ソーシャルエンジニアリング", "攻撃"]
+  },
+  {
+    "id": "q-6-3-001",
+    "domainId": 6,
+    "topicId": "6.3",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "現在、家庭用Wi-Fiルーターで最も推奨される無線セキュリティプロトコルはどれですか？",
+    "options": [
+      { "id": "a", "text": "WEP" },
+      { "id": "b", "text": "WPA" },
+      { "id": "c", "text": "WPA2" },
+      { "id": "d", "text": "WPA3" }
+    ],
+    "correctAnswers": ["d"],
+    "explanation": "WPA3は2018年に策定された最新の無線セキュリティプロトコルで、WPA2の後継です。SAE（Simultaneous Authentication of Equals）ハンドシェイクにより、より強力な暗号化とオフライン辞書攻撃への耐性を提供します。WPA3が利用可能であれば、WPA3の使用が最も推奨されます。",
+    "explanationWrong": {
+      "a": "WEP（Wired Equivalent Privacy）は最も古い無線セキュリティプロトコルで、重大な脆弱性があり、使用は推奨されません。",
+      "b": "WPA（Wi-Fi Protected Access）はWEPの後継ですが、TKIPの脆弱性があり、現在は十分なセキュリティを提供しません。",
+      "c": "WPA2は広く使用されており十分なセキュリティを提供しますが、WPA3が利用可能であればWPA3が推奨されます。"
+    },
+    "relatedTopicIds": ["6.3"],
+    "tags": ["WPA3", "無線セキュリティ", "Wi-Fi"]
+  },
+  {
+    "id": "q-6-3-002",
+    "domainId": 6,
+    "topicId": "6.3",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "WPA2-PersonalとWPA2-Enterpriseの主な違いとして最も適切なものはどれですか？",
+    "options": [
+      { "id": "a", "text": "Personalは暗号化を使用するが、Enterpriseは暗号化を使用しない" },
+      { "id": "b", "text": "Personalは共有パスワード（PSK）を使用し、Enterpriseは802.1X認証サーバーを使用する" },
+      { "id": "c", "text": "PersonalはWPA2で、EnterpriseはWPA3である" },
+      { "id": "d", "text": "Personalは2.4GHzのみ対応し、Enterpriseは5GHzのみ対応する" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "WPA2-Personal（WPA2-PSK）は、すべてのユーザーが同じ事前共有キー（Pre-Shared Key / パスワード）を使用して認証します。WPA2-Enterprise（WPA2-802.1X）は、RADIUS認証サーバーを使用して各ユーザーを個別に認証します。Enterpriseは企業環境向けで、ユーザーごとのアクセス制御と監査が可能です。",
+    "explanationWrong": {
+      "a": "PersonalもEnterpriseも両方ともAES暗号化を使用します。認証方式が異なるだけです。",
+      "c": "PersonalとEnterpriseはWPA2の認証モードの違いであり、WPA2とWPA3の違いではありません。WPA3にもPersonalとEnterpriseがあります。",
+      "d": "周波数帯（2.4GHz/5GHz）はWPA2の認証モードとは無関係です。どちらのモードもどちらの周波数帯でも使用可能です。"
+    },
+    "relatedTopicIds": ["6.3"],
+    "tags": ["WPA2", "Personal", "Enterprise", "PSK", "802.1X"]
+  },
+  {
+    "id": "q-6-1-003",
+    "domainId": 6,
+    "topicId": "6.1",
+    "type": "multiple-choice",
+    "difficulty": "hard",
+    "text": "ファイアウォールの配置場所やルール設定に関して正しい説明を2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "ファイアウォールは内部ネットワークとインターネットの境界に配置するのが一般的である" },
+      { "id": "b", "text": "ファイアウォールのルールは番号が大きいものから順に評価される" },
+      { "id": "c", "text": "デフォルトでは、明示的に許可されていないトラフィックはブロックされるべきである（暗黙のdeny）" },
+      { "id": "d", "text": "ファイアウォールはレイヤー1（物理層）でのみ動作する" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "ファイアウォールは通常、信頼されたネットワーク（内部LAN）と信頼されていないネットワーク（インターネット）の境界に配置します。また、セキュリティのベストプラクティスとして「暗黙のdeny」（明示的に許可されていないトラフィックはすべてブロック）を最後のルールとして設定します。",
+    "explanationWrong": {
+      "b": "ファイアウォールのルールは通常、番号が小さいもの（先頭）から順に評価され、最初に一致したルールが適用されます。",
+      "d": "ファイアウォールはレイヤー3（ネットワーク層）やレイヤー4（トランスポート層）以上で動作します。IPアドレスやポート番号に基づいてフィルタリングを行います。"
+    },
+    "relatedTopicIds": ["6.1"],
+    "tags": ["ファイアウォール", "暗黙のdeny", "セキュリティポリシー"]
+  },
+  {
+    "id": "q-6-2-005",
+    "domainId": 6,
+    "topicId": "6.2",
+    "type": "drag-and-drop",
+    "difficulty": "hard",
+    "text": "各セキュリティ脅威を正しいカテゴリにマッチングしてください。",
+    "dragItems": [
+      { "id": "threat1", "text": "ランサムウェア" },
+      { "id": "threat2", "text": "フィッシングメール" },
+      { "id": "threat3", "text": "DDoS攻撃" },
+      { "id": "threat4", "text": "ショルダーサーフィン" }
+    ],
+    "dropZones": [
+      { "id": "cat1", "text": "マルウェア" },
+      { "id": "cat2", "text": "ソーシャルエンジニアリング" },
+      { "id": "cat3", "text": "サービス妨害" },
+      { "id": "cat4", "text": "物理的脅威" }
+    ],
+    "correctOrder": ["cat1", "cat2", "cat3", "cat4"],
+    "explanation": "ランサムウェアはファイルを暗号化して身代金を要求するマルウェアの一種です。フィッシングメールは人間の心理を悪用するソーシャルエンジニアリング攻撃です。DDoS攻撃は大量のトラフィックでサービスを停止させるサービス妨害攻撃です。ショルダーサーフィンは人の肩越しにパスワード等を盗み見る物理的な脅威です。",
+    "relatedTopicIds": ["6.2"],
+    "tags": ["セキュリティ脅威", "マルウェア", "ソーシャルエンジニアリング", "DoS"]
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "q-3-1-001",
+    "domainId": 3,
+    "topicId": "3.1",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "イーサネットLANで最も一般的に使用されるコネクタの種類はどれですか？",
+    "options": [
+      { "id": "a", "text": "RJ-11" },
+      { "id": "b", "text": "RJ-45" },
+      { "id": "c", "text": "SC" },
+      { "id": "d", "text": "BNC" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "RJ-45はイーサネットLANで最も一般的に使用されるコネクタです。8ピン（8P8C）の構造を持ち、ツイストペアケーブル（Cat5e、Cat6など）の端に取り付けられます。",
+    "explanationWrong": {
+      "a": "RJ-11は電話線に使用される4ピンまたは6ピンのコネクタで、イーサネットには使用されません。",
+      "c": "SC（Subscriber Connector）は光ファイバーケーブルに使用されるコネクタです。",
+      "d": "BNC（Bayonet Neill-Concelman）は同軸ケーブルに使用されるコネクタで、古いイーサネット規格（10BASE2）で使用されていました。"
+    },
+    "relatedTopicIds": ["3.1"],
+    "tags": ["RJ-45", "コネクタ", "イーサネット"]
+  },
+  {
+    "id": "q-3-1-002",
+    "domainId": 3,
+    "topicId": "3.1",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "Cat6ケーブルがサポートする最大データ転送速度と最大距離の組み合わせとして正しいものはどれですか？",
+    "options": [
+      { "id": "a", "text": "1Gbps / 100m" },
+      { "id": "b", "text": "10Gbps / 55m" },
+      { "id": "c", "text": "10Gbps / 100m" },
+      { "id": "d", "text": "100Mbps / 100m" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Cat6ケーブルは10Gbps（10GBASE-T）をサポートしますが、10Gbpsでの最大距離は55mに制限されます。1Gbps（1000BASE-T）では100mまで使用可能です。55mを超えて10Gbpsが必要な場合はCat6aケーブル（100mまで対応）を使用します。",
+    "explanationWrong": {
+      "a": "1Gbps/100mはCat5eの最大仕様です。Cat6は10Gbpsもサポートします。",
+      "c": "10Gbps/100mはCat6a（Augmented Cat6）の仕様です。Cat6では10Gbpsの場合55mまでに制限されます。",
+      "d": "100Mbps/100mはCat5の仕様です。Cat6はそれよりも高速な通信が可能です。"
+    },
+    "relatedTopicIds": ["3.1"],
+    "tags": ["Cat6", "ツイストペア", "ケーブル"]
+  },
+  {
+    "id": "q-3-1-003",
+    "domainId": 3,
+    "topicId": "3.1",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "光ファイバーケーブルの利点として正しいものを2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "電磁干渉（EMI）の影響を受けない" },
+      { "id": "b", "text": "銅線ケーブルよりも安価である" },
+      { "id": "c", "text": "銅線ケーブルよりも長距離通信が可能である" },
+      { "id": "d", "text": "RJ-45コネクタで簡単に接続できる" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "光ファイバーケーブルは光信号を使用するため、電磁干渉（EMI）の影響を受けません。また、信号の減衰が少なく、シングルモードファイバーでは数十kmもの長距離通信が可能です。ただし、銅線ケーブルよりも高価で、専用のコネクタ（SC、LC、STなど）が必要です。",
+    "explanationWrong": {
+      "b": "光ファイバーケーブルは一般的に銅線ケーブルよりも高価です。ケーブル自体だけでなく、送受信機器や接続工事のコストも高くなります。",
+      "d": "光ファイバーケーブルにはSC、LC、STなどの専用コネクタが使用されます。RJ-45は銅線（ツイストペア）ケーブル用のコネクタです。"
+    },
+    "relatedTopicIds": ["3.1"],
+    "tags": ["光ファイバー", "EMI", "ケーブル"]
+  },
+  {
+    "id": "q-3-2-001",
+    "domainId": 3,
+    "topicId": "3.2",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "Wi-Fi規格 802.11acが使用する周波数帯はどれですか？",
+    "options": [
+      { "id": "a", "text": "2.4GHzのみ" },
+      { "id": "b", "text": "5GHzのみ" },
+      { "id": "c", "text": "2.4GHzと5GHzの両方" },
+      { "id": "d", "text": "6GHz" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "802.11ac（Wi-Fi 5）は5GHz帯のみを使用します。5GHz帯は2.4GHz帯よりもチャネル数が多く干渉が少ないため、高速な通信が可能です。最大理論速度は約6.9Gbps（マルチストリーム使用時）です。",
+    "explanationWrong": {
+      "a": "2.4GHzのみを使用する規格は802.11b/gです。802.11acは5GHzのみです。",
+      "c": "2.4GHzと5GHzの両方を使用するのは802.11n（Wi-Fi 4）や802.11ax（Wi-Fi 6）です。",
+      "d": "6GHz帯をサポートするのは802.11ax（Wi-Fi 6E）からです。802.11acでは使用しません。"
+    },
+    "relatedTopicIds": ["3.2"],
+    "tags": ["Wi-Fi", "802.11ac", "周波数帯"]
+  },
+  {
+    "id": "q-3-2-002",
+    "domainId": 3,
+    "topicId": "3.2",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "2.4GHz帯のWi-Fiにおいて、電子レンジが干渉源となる理由として最も適切なものはどれですか？",
+    "options": [
+      { "id": "a", "text": "電子レンジが5GHz帯の電波を発生するため" },
+      { "id": "b", "text": "電子レンジが2.4GHz帯と同じ周波数のマイクロ波を使用するため" },
+      { "id": "c", "text": "電子レンジがネットワークパケットを吸収するため" },
+      { "id": "d", "text": "電子レンジがWi-Fiアクセスポイントの電源を妨害するため" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "電子レンジは食品を加熱するために2.45GHz帯のマイクロ波を使用しています。これはWi-Fiの2.4GHz帯と非常に近い周波数であるため、電子レンジの使用中にシールドから漏れた電波がWi-Fi信号に干渉し、通信速度の低下や接続の不安定を引き起こすことがあります。",
+    "explanationWrong": {
+      "a": "電子レンジは2.45GHz帯のマイクロ波を使用しており、5GHz帯ではありません。",
+      "c": "電子レンジがネットワークパケットを吸収するということはありません。干渉は同じ周波数帯の電波が重なることで発生します。",
+      "d": "電子レンジがWi-Fiアクセスポイントの電源に影響を与えることは通常ありません。干渉は無線周波数レベルで発生します。"
+    },
+    "relatedTopicIds": ["3.2"],
+    "tags": ["Wi-Fi", "2.4GHz", "干渉"]
+  },
+  {
+    "id": "q-3-3-001",
+    "domainId": 3,
+    "topicId": "3.3",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "ネットワーク上のエンドポイントデバイスとして分類されないものはどれですか？",
+    "options": [
+      { "id": "a", "text": "デスクトップPC" },
+      { "id": "b", "text": "スイッチ" },
+      { "id": "c", "text": "IP電話" },
+      { "id": "d", "text": "プリンター" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "スイッチはネットワークインフラストラクチャデバイス（中間デバイス）であり、エンドポイントデバイスではありません。エンドポイントデバイスとは、ネットワークの末端でデータを送受信するデバイス（PC、サーバー、IP電話、プリンター、IoTデバイスなど）を指します。",
+    "explanationWrong": {
+      "a": "デスクトップPCはユーザーが直接使用するエンドポイントデバイスの代表例です。",
+      "c": "IP電話はVoIP通信を行うエンドポイントデバイスです。ネットワークに接続してデータ（音声）を送受信します。",
+      "d": "ネットワークプリンターはIPアドレスを持ちネットワークに接続するエンドポイントデバイスです。"
+    },
+    "relatedTopicIds": ["3.3"],
+    "tags": ["エンドポイント", "スイッチ", "ネットワークデバイス"]
+  },
+  {
+    "id": "q-3-3-002",
+    "domainId": 3,
+    "topicId": "3.3",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "text": "IoT（Internet of Things）デバイスの例として正しいものを2つ選択してください。",
+    "options": [
+      { "id": "a", "text": "スマートサーモスタット" },
+      { "id": "b", "text": "レイヤー2スイッチ" },
+      { "id": "c", "text": "ネットワーク対応セキュリティカメラ" },
+      { "id": "d", "text": "ファイアウォール" }
+    ],
+    "correctAnswers": ["a", "c"],
+    "explanation": "IoTデバイスは、インターネットに接続されたセンサーやアクチュエータを持つスマートデバイスです。スマートサーモスタット（温度制御）やネットワーク対応セキュリティカメラ（監視）はIoTデバイスの代表例です。スイッチやファイアウォールはネットワークインフラデバイスであり、IoTデバイスには分類されません。",
+    "explanationWrong": {
+      "b": "レイヤー2スイッチはネットワークインフラストラクチャデバイスであり、IoTデバイスではありません。",
+      "d": "ファイアウォールはネットワークセキュリティデバイスであり、IoTデバイスには分類されません。"
+    },
+    "relatedTopicIds": ["3.3"],
+    "tags": ["IoT", "エンドポイント"]
+  },
+  {
+    "id": "q-3-4-001",
+    "domainId": 3,
+    "topicId": "3.4",
+    "type": "single-choice",
+    "difficulty": "easy",
+    "text": "WindowsでIPアドレス、サブネットマスク、デフォルトゲートウェイを確認するコマンドはどれですか？",
+    "options": [
+      { "id": "a", "text": "ifconfig" },
+      { "id": "b", "text": "ipconfig" },
+      { "id": "c", "text": "ip addr" },
+      { "id": "d", "text": "netstat" }
+    ],
+    "correctAnswers": ["b"],
+    "explanation": "Windowsでは ipconfig コマンドでIPアドレス、サブネットマスク、デフォルトゲートウェイなどのネットワーク設定を確認できます。詳細情報が必要な場合は ipconfig /all を使用します。",
+    "explanationWrong": {
+      "a": "ifconfigはLinuxやmacOSで使用されるコマンドです。Windowsでは使用できません（ただし、新しいLinuxではipコマンドが推奨されています）。",
+      "c": "ip addrはLinuxでネットワーク設定を確認するコマンドです。Windowsでは使用できません。",
+      "d": "netstatはネットワーク接続やルーティングテーブルの統計情報を表示するコマンドで、IP設定の確認には使用しません。"
+    },
+    "relatedTopicIds": ["3.4"],
+    "tags": ["ipconfig", "Windows", "ネットワーク設定"]
+  },
+  {
+    "id": "q-3-4-002",
+    "domainId": 3,
+    "topicId": "3.4",
+    "type": "single-choice",
+    "difficulty": "medium",
+    "text": "DHCPサーバーからIPアドレスを自動取得する設定にしている場合、WindowsでIPアドレスを再取得するコマンドの組み合わせとして正しいものはどれですか？",
+    "options": [
+      { "id": "a", "text": "ipconfig /release → ipconfig /renew" },
+      { "id": "b", "text": "ipconfig /flushdns → ipconfig /registerdns" },
+      { "id": "c", "text": "netsh interface reset → ipconfig /all" },
+      { "id": "d", "text": "ipconfig /renew → ipconfig /release" }
+    ],
+    "correctAnswers": ["a"],
+    "explanation": "DHCPからのIPアドレス再取得は、まず ipconfig /release で現在のIPアドレスを解放し、次に ipconfig /renew で新しいIPアドレスをDHCPサーバーから取得します。この順序が重要で、release（解放）→ renew（更新）の順に実行します。",
+    "explanationWrong": {
+      "b": "ipconfig /flushdns はDNSキャッシュのクリア、/registerdns はDNS登録の更新であり、IPアドレスの再取得ではありません。",
+      "c": "netsh interface resetはネットワークインターフェースのリセットで、DHCPのIPアドレス再取得とは異なるコマンドです。",
+      "d": "順序が逆です。先にrenew（更新）してからrelease（解放）するのは正しい手順ではありません。release → renewの順序で実行する必要があります。"
+    },
+    "relatedTopicIds": ["3.4"],
+    "tags": ["DHCP", "ipconfig", "Windows"]
+  },
+  {
+    "id": "q-3-1-004",
+    "domainId": 3,
+    "topicId": "3.1",
+    "type": "drag-and-drop",
+    "difficulty": "hard",
+    "text": "各ケーブルタイプを正しいコネクタにマッチングしてください。",
+    "dragItems": [
+      { "id": "utp", "text": "UTPケーブル（ツイストペア）" },
+      { "id": "fiber", "text": "光ファイバーケーブル" },
+      { "id": "coax", "text": "同軸ケーブル" },
+      { "id": "phone", "text": "電話線" }
+    ],
+    "dropZones": [
+      { "id": "rj45", "text": "RJ-45" },
+      { "id": "lc", "text": "LC / SC" },
+      { "id": "bnc", "text": "BNC / F型" },
+      { "id": "rj11", "text": "RJ-11" }
+    ],
+    "correctOrder": ["rj45", "lc", "bnc", "rj11"],
+    "explanation": "UTP（Unshielded Twisted Pair）ケーブルにはRJ-45コネクタが使用されます。光ファイバーケーブルにはLC（Lucent Connector）やSC（Subscriber Connector）などの専用コネクタが使用されます。同軸ケーブルにはBNCやF型コネクタが使用されます。電話線にはRJ-11コネクタ（4ピンまたは6ピン）が使用されます。",
+    "relatedTopicIds": ["3.1"],
+    "tags": ["コネクタ", "ケーブル", "RJ-45", "光ファイバー"]
+  }
+]
