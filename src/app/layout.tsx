@@ -33,6 +33,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -50,7 +51,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <TooltipProvider>
             <Header />
-            <main className="mx-auto max-w-7xl px-4 pb-20 pt-6 sm:pb-6">
+            <main className="mx-auto max-w-7xl px-4 pb-24 pt-6 sm:pb-6">
               {children}
             </main>
             <MobileNav />

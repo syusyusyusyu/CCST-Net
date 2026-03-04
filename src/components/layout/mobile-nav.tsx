@@ -42,7 +42,10 @@ export function MobileNav() {
   if (pathname === "/exam/session" || pathname === "/study/session") return null;
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t bg-background pb-safe sm:hidden">
+    <nav
+      className="fixed bottom-0 left-0 right-0 z-50 border-t bg-background sm:hidden"
+      style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
+    >
       <div className="flex items-center justify-around">
         {NAV_ITEMS.map(item => {
           const isActive = item.href === "/"
@@ -53,7 +56,7 @@ export function MobileNav() {
               key={item.href}
               href={item.href}
               className={cn(
-                "flex flex-col items-center gap-1 px-3 py-2 text-xs transition-colors",
+                "flex flex-col items-center gap-1 px-4 py-3 text-xs transition-colors",
                 isActive ? "text-primary" : "text-muted-foreground"
               )}
             >
